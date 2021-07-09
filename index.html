@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
     <title>Webuddha</title>
 </head>
 
 <body class="bg-blue-300 p-4">
-    <main>
-        <header>
-            <h1 class="text-6xl">Webuddha</h1>
+    <div id="app" class="container">
+
+        <header class="bg-gray-50 border rounded-xl p-4">
+            <h1 class="text-6xl font-bold hidden">Webuddha</h1>
             <ul>
                 <li>Services</li>
                 <li>Portfolio</li>
@@ -22,7 +23,106 @@
                 <li>Contact</li>
             </ul>
         </header>
-    </main>
+
+        <main>
+            <div class="cta">
+                <ul>
+                    <li v-for="a in cta">
+                        <div class="border rounded-lg p-4 my-4">
+                            <h2>{{a.title}}</h2>
+                            <div>
+                                {{a.text}}
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="case_studies">
+                <ul>
+                    <li v-for="c in case_studies">
+                        <div class="bg-gray-50 border rounded-lg p-4 my-4">
+                            <h2>{{c.title}}</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="services">
+                <ul>
+                    <li v-for="service in services">
+                        <div class="bg-gray-50 border rounded-lg p-4 my-4">
+                            <h2>{{service.title}}</h2>
+                            <div>{{service.text}}</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+    </div>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                cta: [
+                    {
+                        img: "image.jpg",
+                        title: "Over 10 years",
+                        text: "Servicing Atlanta since 2001 our developers and designers will provide unique and powerful insight into the web development and design industries. We are a one stop shop for all of your web needs.  "
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "Dream BIG",
+                        text: "Webuddha has the technology expertise to develop custom web based business tools that will help your company strive. Increase your companies reach with robust tools for a fraction of the industries cost. How do we do it? Click the 'Learn More' button to find out."
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "Grow your business",
+                        text: "Make a statement without breaking the bank. Every company needs a web presence and you shouldn't have to pay an arm and a leg to update it. Included with every website is a Joomla CMS system for easily updating your website."
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "Practical Solutions",
+                        text: "Project Management Software, Joomla Plug-Ins, Sales Force API's, Package Tracking Software, custom e-Commerce Software, and Website Design Templates are just some of our prepackaged business solutions.."
+                    }
+                ],
+                case_studies: [
+                    {
+                        img: "image.jpg",
+                        title: "Karen Marie Moning"
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "Henri Lloyd North America"
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "Metal Sugar Jewelry, New York"
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "DocsNearYou.com"
+                    }
+                ],
+                services: [
+                    {
+                        img: "image.jpg",
+                        title: "Web Interface & Graphic Design",
+                        text: "Atlanta Website Design services by Webuddha offer creativity blended with a business-driven approach, providing fresh web designs that will keep you ahead of the competition. Our web designers strive to create beautiful and professional designs that draw recognition while making a profound statement to your target audience. Our goal driven web design services are modeled to become an integral part of your organizations internet marketing strategy or website development project.",
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "Website Database & Code Development",
+                        text: "Atlanta Web Development services by Webuddha deliver function and quality, providing software interface and database solutions that are prepared to grow with your company. With strength in development and a budget conscious approach, Webuddha delivers a product unmatched in the industry.  Whatever your software needs, whether to integrate existing tools, manage customer data, streamline procedures, or develop an entirely new platform, Webuddha has you covered!",
+                    },
+                    {
+                        img: "image.jpg",
+                        title: "SEO & Online Marketing",
+                        text: "Atlanta Internet Marketing and Search Engine Optimization solutions by Webuddha provide the necessary compliment to any web presence. Through time tested methods of target analysis and website deployment, Webuddha prepares your company for recognition. Our inclusive and focused approach works aggressively to increase the ranking of your website and bring qualified visitors to your doorstep.",
+                    },
+                ]
+            }
+        });
+    </script>
 </body>
 
 </html>
