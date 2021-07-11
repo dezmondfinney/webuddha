@@ -40,11 +40,8 @@
             <div class="testimonials">
                 <ul>
                     <li v-for="testimonial in testimonials">
-                        <div class="border rounded-lg p-4 my-4">
-                            <h2>Testimonials</h2>
-                            <div>
-                                {{testimonial.quote}}
-                            </div>
+                        <div class="prose">
+                            <div v-html="testimonial.quote"></div>
                         </div>
                     </li>
                 </ul>
@@ -171,10 +168,10 @@
             data: {
                 testimonials: [
                     {
-                        quote: "<quote>Testimonial quote 1</quote>"
+                        quote: "<blockquote>Testimonial quote 1</blockquote>"
                     },
                     {
-                        quote: "Testimonial quote 2 -- A ggreat man"
+                        quote: "<blockquote>Testimonial quote 2</blockquote> <em> -- A great man</em>"
                     },
                     {
                         quote: "Testimonial quote 3"
