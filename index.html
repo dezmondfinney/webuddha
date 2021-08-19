@@ -2,25 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <link rel="stylesheet" href="main.css" />
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="styles/main.css">
   <title>Webuddha</title>
 </head>
 
 <body class="bg-blue-300 p-4">
   <style>
     .clip-right {
-      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
     }
 
     .clip-left {
-      clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+    }
+
+    .a {
+      aspect-ratio: 2/1;
     }
   </style>
   <div id="app" class="container mx-auto">
+
     <header class="bg-gray-50 border rounded-xl p-4">
       <h1 class="text-6xl font-bold hidden">Webuddha</h1>
       <ul class="flex">
@@ -33,41 +40,14 @@
     </header>
 
     <main>
-      <div class="cta border rounded-lg p-4 my-4">
-        <ul class="">
-          <li v-for="a in cta">
+      <div class="cta my-4">
+        <ul class="cta-list" data-flickity='{ "cellAlign": "left", "contain": true }'>
+          <li v-for="a in cta" class="a w-full bg-red-300">
             <div class="">
-              <h3>{{a.title}}</h3>
-              <div>{{a.text}}</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="testimonials border rounded-lg p-4 my-4">
-        <h2>Testimonials</h2>
-        <ul>
-          <li v-for="testimonial in testimonials">
-            <div class="prose">
-              <div v-html="testimonial.quote"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="case_studies">
-        <ul>
-          <li v-for="c in case_studies">
-            <div class="bg-gray-50 border rounded-lg p-4 my-4">
-              <h3>{{c.title}}</h3>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="services">
-        <ul>
-          <li v-for="service in services">
-            <div class="bg-gray-50 border rounded-lg p-4 my-4">
-              <h3>{{service.title}}</h3>
-              <div>{{service.text}}</div>
+              <h3 class="">{{a.title}}</h3>
+              <div>
+                {{a.text}}
+              </div>
             </div>
           </li>
         </ul>
@@ -75,49 +55,43 @@
 
       <div class="about text-gray-600">
         <section class="flex bg-[#4B5B7F] h-[34rem]">
+
           <div class="text-white w-3/5 p-6 flex-col items-center justify-center">
-            <h3 class="text-4xl mb-6">Webuddha is Passionate About You</h3>
+            <h3 class="text-4xl mb-6">Webuddha is Passionate About You </h3>
             <p class="prose text-white">
-              At Webuddha we know that the opportunities of tomorrow come from
-              the contributions made today. Because of this, we strive to
-              provide the highest quality, most cost effective and resource
-              efficient web design and web development available in Atlanta,
-              Ga. Our goal is to empower clients with the design knowledge and
-              development tools of tomorrow, exploring growth opportunities,
-              and ensuring that a competitive web based advantage is
-              maintained.
+              At Webuddha we know that the opportunities of tomorrow come from the contributions made
+              today. Because of this, we strive to provide the highest quality, most cost effective and
+              resource efficient web design and web development available in Atlanta, Ga. Our goal is to
+              empower clients with the design knowledge and development tools of tomorrow, exploring
+              growth opportunities, and ensuring that a competitive web based advantage is maintained.
             </p>
           </div>
 
           <div class="flex justify-end text-right w-2/5">
-            <img class="clip-right h-full" src="img/kid-with-plane.png" alt="Kid With Plane" />
+            <img class="clip-right h-full" src="img/kid-with-plane.png" alt="Kid With Plane">
           </div>
         </section>
 
         <section class="flex bg-[#DAED4E] h-[29rem]">
           <figure class="w-2/5">
-            <img class="clip-left h-full" src="img/happy-businessman.png" alt="Kid With Plane" />
+            <img class="clip-left" src="img/happy-businessman.png" alt="Kid With Plane">
           </figure>
 
           <div class="w-3/5 p-6">
             <h3 class="text-4xl mb-6">Committed to Uncompromising Vision</h3>
             <p class="prose">
-              We believe that success is found as a joint experience, realized
-              when the aspirations of our client have been met and exceeded.
-              With integrity and pride, we always maintain the channels for
-              collaboration, provide ongoing education, and engaging in the
-              exploration of new website design and website development
-              technologies to meet the demands of our clients' competitive
-              market. We own our responsibility to find success with each
-              client, and are honored to have an opportunity to engage in the
-              discovery of new web solutions. Together we stand witness to the
-              ongoing growth that is born as the fruit from each website
-              project collaboration.
+              We believe that success is found as a joint experience, realized when the aspirations of our
+              client have been met and exceeded. With integrity and pride, we always maintain the channels
+              for collaboration, provide ongoing education, and engaging in the exploration of new website
+              design and website development technologies to meet the demands of our clients' competitive
+              market. We own our responsibility to find success with each client, and are honored to have
+              an opportunity to engage in the discovery of new web solutions. Together we stand witness to
+              the ongoing growth that is born as the fruit from each website project collaboration.
             </p>
           </div>
         </section>
 
-        <section class="border flex">
+        <section class="border flex hidden">
           <div class="w-2/3">
             <h3>Straightforward Objectives</h3>
             <ul>
@@ -132,71 +106,94 @@
           </div>
 
           <figure class="">
-            <img src="img/aligning-learning-to-business.png" alt="Kid With Plane" />
+            <img src="img/aligning-learning-to-business.png" alt="Kid With Plane">
           </figure>
         </section>
 
-        <section class="border flex">
+        <section class="border flex hidden">
           <figure class="">
-            <img src="img/kid-with-plane.png" alt="Kid With Plane" />
+            <img src="img/kid-with-plane.png" alt="Kid With Plane">
           </figure>
 
           <div class="w-2/3">
             <h3>Resourceful Methods</h3>
             <ul>
-              <li>Leverage All Design & Development Resources</li>
-              <li>Plan for Future Expansion</li>
-              <li>Develop Modular Functionality</li>
-              <li>Integrate Open-Source Solutions</li>
-              <li>Partner with Industry Leaders</li>
-              <li>Seek Innovation and Experiment</li>
-              <li>Test Applications for Compatibility</li>
-              <li>Fluid Website Design & Development Process</li>
+              <li>Leverage All Design & Development Resources </li>
+              <li>Plan for Future Expansion </li>
+              <li>Develop Modular Functionality </li>
+              <li>Integrate Open-Source Solutions </li>
+              <li>Partner with Industry Leaders </li>
+              <li>Seek Innovation and Experiment </li>
+              <li>Test Applications for Compatibility </li>
+              <li>Fluid Website Design & Development Process </li>
             </ul>
           </div>
         </section>
       </div>
 
+      <div class="services">
+        <ul>
+          <li v-for="service in services">
+            <div class="bg-gray-50 border rounded-lg p-4 my-4">
+              <h3>{{service.title}}</h3>
+              <div>{{service.text}}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="case_studies">
+        <ul>
+          <li v-for="c in case_studies">
+            <div class="bg-gray-50 border rounded-lg p-4 my-4">
+              <h3>{{c.title}}</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="testimonials border rounded-lg p-4 my-4">
+        <h2>Testimonials</h2>
+        <ul>
+          <li v-for="testimonial in testimonials">
+            <div class="prose">
+              <div v-html="testimonial.quote"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
       <div class="contact">
         <h2>Contact</h2>
         <div class="form">
           <form action="contact.php" method="post" class="flex flex-col space-y-4">
-            <input type="text" placeholder="Name *" />
-            <input type="text" placeholder="Email *" />
-            <input type="text" placeholder="Subject *" />
-            <textarea name="message" id="message" cols="30" rows="10">
-              Message *</textarea>
-            <input type="text" placeholder="How did you find us?" />
+            <input type="text" placeholder="Name *">
+            <input type="text" placeholder="Email *">
+            <input type="text" placeholder="Subject *">
+            <textarea name="message" id="message" cols="30" rows="10">Message *</textarea>
+            <input type="text" placeholder="How did you find us?">
             <button type="submit">Submit your information</button>
           </form>
 
           <div>
             <button>Request an Atlanta Website Design Proposal</button>
-            <button>Atlanta Web Design Support Tickets</button>
+            <button> Atlanta Web Design Support Tickets</button>
             <div class="prose">
               <p>
-                <strong>It's Easy to Reach Us!</strong> We believe
-                communication is at the core of any successful relationship,
-                so we have created a myriad of options to suit your need.
+                <strong>It's Easy to Reach Us!</strong> We believe communication is at the core of any
+                successful relationship, so we have created a myriad of options to suit your need.
               </p>
               <ul>
-                <li>
-                  Call us between the hours of 10am-6pm EST at 678-799-9855.
-                </li>
-                <li>
-                  Create a Support Ticket through our Billing and Support
-                  system.
-                </li>
-                <li>Fill out our simple Contact Form to the left.</li>
-                <li>
-                  Complete our Detailed RFP to receive a quick project
-                  estimation.
-                </li>
+                <li> Call us between the hours of 10am-6pm EST at 678-799-9855. </li>
+                <li> Create a Support Ticket through our Billing and Support system. </li>
+                <li> Fill out our simple Contact Form to the left. </li>
+                <li> Complete our Detailed RFP to receive a quick project estimation. </li>
               </ul>
               <p>
-                If you don't know what you are looking for or just need some
-                questions answered about your current website, please give us
-                a call between the hours of 10am and 6pm at 678-799-9855.
+                If you don't know what you are looking for or just need some questions answered about
+                your current website, please give us a call between the hours of 10am and 6pm at
+                678-799-9855.
               </p>
             </div>
           </div>
@@ -216,13 +213,12 @@
       </ul>
 
       <p>
-        &copy; 2014 Holodyn Global, All Rights Reserved | Webuddha & Holodyn
-        are located in Atlanta, Georgia |
-        <a href="#">Developer Tools</a> |
-        <a href="#">Atlanta Web Templates</a> | Call us at
-        <a href="tel:+678-799-9855">678-799-9855</a>
+        &copy; 2014 Holodyn Global, All Rights Reserved | Webuddha & Holodyn are located in Atlanta, Georgia |
+        <a href="#">Developer Tools</a> | <a href="#">Atlanta Web Templates</a> | Call us at <a
+          href="tel:+678-799-9855">678-799-9855</a>
       </p>
     </footer>
+
   </div>
   <script>
     const app = new Vue({
@@ -230,58 +226,57 @@
       data: {
         testimonials: [
           {
-            quote: "<blockquote>Testimonial quote 1</blockquote>",
+            quote: "<blockquote>Testimonial quote 1</blockquote>"
           },
           {
-            quote:
-              "<blockquote>Testimonial quote 2</blockquote> <em> -- A great man</em>",
+            quote: "<blockquote>Testimonial quote 2</blockquote> <em> -- A great man</em>"
           },
           {
-            quote: "Testimonial quote 3",
+            quote: "Testimonial quote 3"
           },
           {
-            quote: "Testimonial quote 4",
+            quote: "Testimonial quote 4"
           },
         ],
         cta: [
           {
             img: "image.jpg",
             title: "Over 10 years",
-            text: "Servicing Atlanta since 2001 our developers and designers will provide unique and powerful insight into the web development and design industries. We are a one stop shop for all of your web needs.  ",
+            text: "Servicing Atlanta since 2001 our developers and designers will provide unique and powerful insight into the web development and design industries. We are a one stop shop for all of your web needs.  "
           },
           {
             img: "image.jpg",
             title: "Dream BIG",
-            text: "Webuddha has the technology expertise to develop custom web based business tools that will help your company strive. Increase your companies reach with robust tools for a fraction of the industries cost. How do we do it? Click the 'Learn More' button to find out.",
+            text: "Webuddha has the technology expertise to develop custom web based business tools that will help your company strive. Increase your companies reach with robust tools for a fraction of the industries cost. How do we do it? Click the 'Learn More' button to find out."
           },
           {
             img: "image.jpg",
             title: "Grow your business",
-            text: "Make a statement without breaking the bank. Every company needs a web presence and you shouldn't have to pay an arm and a leg to update it. Included with every website is a Joomla CMS system for easily updating your website.",
+            text: "Make a statement without breaking the bank. Every company needs a web presence and you shouldn't have to pay an arm and a leg to update it. Included with every website is a Joomla CMS system for easily updating your website."
           },
           {
             img: "image.jpg",
             title: "Practical Solutions",
-            text: "Project Management Software, Joomla Plug-Ins, Sales Force API's, Package Tracking Software, custom e-Commerce Software, and Website Design Templates are just some of our prepackaged business solutions..",
-          },
+            text: "Project Management Software, Joomla Plug-Ins, Sales Force API's, Package Tracking Software, custom e-Commerce Software, and Website Design Templates are just some of our prepackaged business solutions.."
+          }
         ],
         case_studies: [
           {
             img: "image.jpg",
-            title: "Karen Marie Moning",
+            title: "Karen Marie Moning"
           },
           {
             img: "image.jpg",
-            title: "Henri Lloyd North America",
+            title: "Henri Lloyd North America"
           },
           {
             img: "image.jpg",
-            title: "Metal Sugar Jewelry, New York",
+            title: "Metal Sugar Jewelry, New York"
           },
           {
             img: "image.jpg",
-            title: "DocsNearYou.com",
-          },
+            title: "DocsNearYou.com"
+          }
         ],
         services: [
           {
@@ -299,8 +294,8 @@
             title: "SEO & Online Marketing",
             text: "Atlanta Internet Marketing and Search Engine Optimization solutions by Webuddha provide the necessary compliment to any web presence. Through time tested methods of target analysis and website deployment, Webuddha prepares your company for recognition. Our inclusive and focused approach works aggressively to increase the ranking of your website and bring qualified visitors to your doorstep.",
           },
-        ],
-      },
+        ]
+      }
     });
   </script>
 </body>
