@@ -41,11 +41,11 @@
 
     <main>
       <div class="cta my-4">
-        <ul class="cta-list" data-flickity='{ "cellAlign": "left", "contain": true }'>
-          <li v-for="a in cta" class="a w-full bg-red-300">
+        <ul class="cta-list" data-flickity='{ "pageDots": false, "cellAlign": "left", "contain": true }'>
+          <li v-for="a in cta" class="a w-full bg-gray-50 rounded-xl">
             <div class="">
               <h3 class="">{{a.title}}</h3>
-              <div>
+              <div class="">
                 {{a.text}}
               </div>
             </div>
@@ -200,6 +200,7 @@
         </div>
       </div>
     </main>
+
     <footer class="text-center">
       <ul class="bg-yellow-200 flex justify-center items-center">
         <li><a href="home">Home</a></li>
