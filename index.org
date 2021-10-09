@@ -1,0 +1,115 @@
+#+TITLE: Webuddha
+#+OPTIONS: html-style:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+#+HTML_HEAD: <script type="text/javascript" src="main.js"></script>
+* Webuddha
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: webuddha
+:CUSTOM_ID: webuddha
+:END:
+** Got mobile
+Today's web is mobile. More and more people are viewing the web through their tablets and smart phones. Make sure your web presence is getting the right attention it deserves.
+If you are on a smart phone, check it out HERE.
+** Grow your business
+Webuddha has the technology expertise to develop custom web based business tools that will help your company strive. Increase your companies reach with robust tools for a fraction of the industries cost. How do we do it? Click the "Learn More" button to find out.
+** Practical Solutions
+Project Management Software, Joomla Plug-Ins, Sales Force API's, Package Tracking Software, custom e-Commerce Software, and Website Design Templates are just some of our prepackaged business solutions...
+** Over 10 years
+Servicing Atlanta since 2001 our developers and designers will provide unique and powerful insight into the web development and design industries. We are a one stop shop for all of your web needs.
+
+* Case Studies
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: case_studies
+:CUSTOM_ID: case_studies
+:END:
+** Web Interface & Graphic Design
+Atlanta Website Design services by Webuddha offer creativity blended with a
+business-driven approach, providing fresh web designs that will keep you ahead
+of the competition.
+
+Our web designers strive to create beautiful and professional designs that draw
+recognition while making a profound statement to your target audience. Our goal
+driven web design services are modeled to become an integral part of your
+organizations internet marketing strategy or website development project.
+
+Atlanta Web Design   »
+
+** Website Database & Code Development
+Atlanta Web Development services by Webuddha deliver function and quality,
+providing software interface and database solutions that are prepared to grow
+with your company.
+
+With strength in development and a budget conscious approach, Webuddha delivers
+a product unmatched in the industry.  Whatever your software needs, whether to
+integrate existing tools, manage customer data, streamline procedures, or
+develop an entirely new platform, Webuddha has you covered!
+
+Atlanta Web Development   »
+
+** SEO & Online Marketing
+Atlanta Internet Marketing and Search Engine Optimization solutions by Webuddha
+provide the necessary compliment to any web presence.
+
+Through time tested methods of target analysis and website deployment, Webuddha
+prepares your company for recognition. Our inclusive and focused approach works
+aggressively to increase the ranking of your website and bring qualified
+visitors to your doorstep.
+
+Atlanta Internet Marketing   » Services
+
+* About
+** Webuddha is Passionate About You
+At Webuddha we know that the opportunities of tomorrow come from the
+contributions made today. Because of this, we strive to provide the highest
+quality, most cost effective and resource efficient web design and web
+development available in Atlanta, Ga. Our goal is to empower clients with the
+design knowledge and development tools of tomorrow, exploring growth
+opportunities, and ensuring that a competitive web based advantage is
+maintained.
+
+** Committed to Uncompromising Vision
+We believe that success is found as a joint experience, realized when the
+aspirations of our client have been met and exceeded. With integrity and pride,
+we always maintain the channels for collaboration, provide ongoing education,
+and engaging in the exploration of new website design and website development
+technologies to meet the demands of our clients' competitive market. We own our
+responsibility to find success with each client, and are honored to have an
+opportunity to engage in the discovery of new web solutions. Together we stand
+witness to the ongoing growth that is born as the fruit from each website
+project collaboration.
+
+** Straightforward Objectives
+- Respond Quickly to Client Demands
+- Perform Thorough Research on All Objectives
+- Act with Integrity and Transparency
+- Take Responsibility and Surpass Expectation
+- Seek Innovation and Enjoy Taking Risks
+- Share Experiences and Engage in Community
+- Enjoy the Process!
+
+** Resourceful Methods
+- Leverage All Design & Development Resources
+- Plan for Future Expansion
+- Develop Modular Functionality
+- Integrate Open-Source Solutions
+- Partner with Industry Leaders
+- Seek Innovation and Experiment
+- Test Applications for Compatibility
+- Fluid Website Design & Development Process
+
+* Contact
+It's Easy to Reach Us! We believe communication is at the core of any successful
+relationship, so we have created a myriad of options to suit your need.
+
+- Call us between the hours of 10am-6pm EST at 678-799-9855.
+- Create a Support Ticket through our Billing and Support system.
+- Fill out our simple Contact Form to the left.
+- Complete our Detailed RFP to receive a quick project estimation.
+
+If you don't know what you are looking for or just need some questions answered
+about your current website, please give us a call between the hours of 10am and
+6pm at 678-799-9855.
+
+Submit an RFP
+
+Support Tickets

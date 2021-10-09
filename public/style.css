@@ -1,0 +1,33 @@
+body {
+    background-color: #333;
+    color: #eee;
+    font-family: sans-serif;
+}
+
+#content {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#content > .outline-2 {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#outline-container-webuddha {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+}
+
+#outline-container-case_studies {
+    border: 1px solid black;
+}
+
+#outline-container-case_studies .outline-3 {
+    display: none;
+}
+
+#outline-container-case_studies .active {
+    display: block;
+}
