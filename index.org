@@ -17,10 +17,10 @@ Project Management Software, Joomla Plug-Ins, Sales Force API's, Package Trackin
 ** Over 10 years
 Servicing Atlanta since 2001 our developers and designers will provide unique and powerful insight into the web development and design industries. We are a one stop shop for all of your web needs.
 
-* Case Studies
+* Services
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: case_studies
-:CUSTOM_ID: case_studies
+:HTML_CONTAINER_CLASS: services
+:CUSTOM_ID: services
 :END:
 ** Web Interface & Graphic Design
 Atlanta Website Design services by Webuddha offer creativity blended with a
@@ -58,6 +58,10 @@ visitors to your doorstep.
 Atlanta Internet Marketing   » Services
 
 * About
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: about
+:CUSTOM_ID: about
+:END:
 ** Webuddha is Passionate About You
 At Webuddha we know that the opportunities of tomorrow come from the
 contributions made today. Because of this, we strive to provide the highest
