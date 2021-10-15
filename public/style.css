@@ -2,32 +2,38 @@ body {
     background-color: #333;
     color: #eee;
     font-family: sans-serif;
+    margin: 0;
 }
 
 #content {
-    width: 80vw;
-    margin: 0 auto;
 }
 
 #content > .outline-2 {
-    padding: 10px;
+    padding: 10px 0;
     margin-bottom: 10px;
 }
 
 #outline-container-webuddha {
     background-color: white;
     color: #333;
-    border-radius: 10px;
 }
 
-#outline-container-case_studies {
+#outline-container-services {
     border: 1px solid black;
+    width: 80vw;
+    margin: 0 auto;
 }
 
-#outline-container-case_studies .outline-3 {
+#outline-container-services .outline-3 {
     display: none;
 }
 
-#outline-container-case_studies .active {
+#outline-container-services .active {
     display: block;
+}
+
+#outline-container-about {
+    border: 1px solid black;
+    width: 80vw;
+    margin: 0 auto;
 }
