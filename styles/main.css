@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: cornflowerblue;
+  background-color: lightgray;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +50,7 @@ img {
 
 .cta-list li {
   margin: 0;
-  /* min-height: 50vh; */
+  height: 40vh;
   width: 90vw;
 }
 
@@ -58,9 +58,22 @@ img {
   padding: 0 30px;
 }
 
-/* ---------------------------------- About  */
-#about {
+/* ---------------------------------- Services  */
+#services {
+  padding: 30px;
+}
 
+#services ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 90vw;
+}
+
+/* ---------------------------------- About  */
+#about section {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 #about img {

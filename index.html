@@ -41,6 +41,18 @@
         </ul>
       </div>
 
+      <div id="services">
+        <ul>
+          <li v-for="service in services">
+            <div class="">
+              <h3>{{service.title}}</h3>
+              <div>{{service.text}}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
       <div id="about">
         <section class="">
 
@@ -120,18 +132,6 @@
           </div>
         </section>
       </div>
-
-      <div class="services">
-        <ul>
-          <li v-for="service in services">
-            <div class="">
-              <h3>{{service.title}}</h3>
-              <div>{{service.text}}</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
       <div class="case_studies">
         <ul>
           <li v-for="c in case_studies">
