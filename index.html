@@ -12,25 +12,12 @@
   <title>Webuddha</title>
 </head>
 
-<body class="bg-blue-300 p-4">
-  <style>
-    .clip-right {
-      clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-    }
+<body class="">
+  <div id="app" class="">
 
-    .clip-left {
-      clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
-    }
-
-    .a {
-      aspect-ratio: 2/1;
-    }
-  </style>
-  <div id="app" class="container mx-auto">
-
-    <header class="bg-gray-50 border rounded-xl p-4">
-      <h1 class="text-6xl font-bold hidden">Webuddha</h1>
-      <ul class="flex">
+    <header id="header">
+      <h1 class="">Webuddha</h1>
+      <ul class="">
         <li>Services</li>
         <li>Portfolio</li>
         <li>Products</li>
@@ -40,9 +27,9 @@
     </header>
 
     <main>
-      <div class="cta my-4">
-        <ul class="cta-list" data-flickity='{ "pageDots": false, "cellAlign": "left", "contain": true }'>
-          <li v-for="a in cta" class="a w-full bg-gray-50 rounded-xl">
+      <div id="cta">
+        <ul class="cta-list" data-flickity='{ "pageDots": false, "cellAlign": "left", "contain": true, "wrapAround": true }'>
+          <li v-for="a in cta" class="">
             <div class="">
               <h3 class="">{{a.title}}</h3>
               <div class="">
@@ -53,12 +40,12 @@
         </ul>
       </div>
 
-      <div class="about text-gray-600">
-        <section class="flex bg-[#4B5B7F] h-[34rem]">
+      <div class="about">
+        <section class="">
 
-          <div class="text-white w-3/5 p-6 flex-col items-center justify-center">
-            <h3 class="text-4xl mb-6">Webuddha is Passionate About You </h3>
-            <p class="prose text-white">
+          <div class="">
+            <h3 class="">Webuddha is Passionate About You </h3>
+            <p class="">
               At Webuddha we know that the opportunities of tomorrow come from the contributions made
               today. Because of this, we strive to provide the highest quality, most cost effective and
               resource efficient web design and web development available in Atlanta, Ga. Our goal is to
@@ -67,19 +54,19 @@
             </p>
           </div>
 
-          <div class="flex justify-end text-right w-2/5">
-            <img class="clip-right h-full" src="img/kid-with-plane.png" alt="Kid With Plane">
+          <div class="">
+            <img class="" src="img/kid-with-plane.png" alt="Kid With Plane">
           </div>
         </section>
 
-        <section class="flex bg-[#DAED4E] h-[29rem]">
-          <figure class="w-2/5">
-            <img class="clip-left" src="img/happy-businessman.png" alt="Kid With Plane">
+        <section class="">
+          <figure class="">
+            <img class="" src="img/happy-businessman.png" alt="Kid With Plane">
           </figure>
 
-          <div class="w-3/5 p-6">
-            <h3 class="text-4xl mb-6">Committed to Uncompromising Vision</h3>
-            <p class="prose">
+          <div class="">
+            <h3 class="">Committed to Uncompromising Vision</h3>
+            <p class="">
               We believe that success is found as a joint experience, realized when the aspirations of our
               client have been met and exceeded. With integrity and pride, we always maintain the channels
               for collaboration, provide ongoing education, and engaging in the exploration of new website
@@ -91,8 +78,8 @@
           </div>
         </section>
 
-        <section class="border flex hidden">
-          <div class="w-2/3">
+        <section class="">
+          <div class="">
             <h3>Straightforward Objectives</h3>
             <ul>
               <li>Respond Quickly to Client Demands</li>
@@ -110,12 +97,12 @@
           </figure>
         </section>
 
-        <section class="border flex hidden">
+        <section class="">
           <figure class="">
             <img src="img/kid-with-plane.png" alt="Kid With Plane">
           </figure>
 
-          <div class="w-2/3">
+          <div class="">
             <h3>Resourceful Methods</h3>
             <ul>
               <li>Leverage All Design & Development Resources </li>
@@ -134,7 +121,7 @@
       <div class="services">
         <ul>
           <li v-for="service in services">
-            <div class="bg-gray-50 border rounded-lg p-4 my-4">
+            <div class="">
               <h3>{{service.title}}</h3>
               <div>{{service.text}}</div>
             </div>
@@ -145,14 +132,14 @@
       <div class="case_studies">
         <ul>
           <li v-for="c in case_studies">
-            <div class="bg-gray-50 border rounded-lg p-4 my-4">
+            <div class="">
               <h3>{{c.title}}</h3>
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="testimonials border rounded-lg p-4 my-4">
+      <div class="testimonials">
         <h2>Testimonials</h2>
         <ul>
           <li v-for="testimonial in testimonials">
@@ -163,11 +150,10 @@
         </ul>
       </div>
 
-
       <div class="contact">
         <h2>Contact</h2>
         <div class="form">
-          <form action="contact.php" method="post" class="flex flex-col space-y-4">
+          <form action="contact.php" method="post" class="">
             <input type="text" placeholder="Name *">
             <input type="text" placeholder="Email *">
             <input type="text" placeholder="Subject *">
@@ -179,7 +165,7 @@
           <div>
             <button>Request an Atlanta Website Design Proposal</button>
             <button> Atlanta Web Design Support Tickets</button>
-            <div class="prose">
+            <div class="">
               <p>
                 <strong>It's Easy to Reach Us!</strong> We believe communication is at the core of any
                 successful relationship, so we have created a myriad of options to suit your need.
@@ -201,8 +187,8 @@
       </div>
     </main>
 
-    <footer class="text-center">
-      <ul class="bg-yellow-200 flex justify-center items-center">
+    <footer id="footer">
+      <ul class="">
         <li><a href="home">Home</a></li>
         <li><a href="Atlanta Web Design">Atlanta Web Design</a></li>
         <li><a href="#">Atlanta Web Development</a></li>
@@ -221,6 +207,7 @@
     </footer>
 
   </div>
+
   <script>
     const app = new Vue({
       el: "#app",
